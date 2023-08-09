@@ -12,8 +12,12 @@ console.log(ary);
 
 var mobile_num = prompt("Enter your mobile number");
 if(mobile_num === null || mobile_num === ""){
-    ary.pop()
+    var name = prompt("Enter Name");
+    if(name === null || name === ""){
+        ary.shift()
+    }
 }else{
-    ary.push("successful")
+    ary.push("iHunar");
+    ary.unshift(mobile_num)
 }
 console.log(ary);
